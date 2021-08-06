@@ -1,1 +1,72 @@
- 
+% Curriculum Vitae
+% Author: Connor Briggs
+
+% Use the moderncv class to typeset.
+\documentclass{moderncv}
+
+
+% I like blue. Also, casual breaks pdflatex.
+\moderncvtheme[blue]{classic}
+
+% Set the margins to something reasonable.
+\usepackage[margin=1in]{geometry}
+\recomputelengths % this has to be here according to moderncv docs.
+
+% Get the github symbols.
+\usepackage{fontawesome}
+
+\usepackage{needspace}
+
+% Personal info.
+\firstname{Connor}
+\lastname{Briggs}
+\address{203 Whitmer Rd.}{Shippensburg, PA, 17257}
+\phone{+1-(717)-860-9342}
+\email{cgbriggs99@gmail.com}
+% VT email address, and github profile.
+\extrainfo{\emailsymbol \emaillink{cgbriggs@vt.edu}\\\faGithubAlt~\httplink{https://github.com/cgbriggs99}}
+
+\begin{document}
+% Add title with personal info.
+\makecvtitle
+
+% Needs the \Needspace* so that section titles don't become orphans.
+\Needspace*{4\baselineskip}
+\section{Research Interests}
+Quantum Chemistry
+
+\Needspace*{4\baselineskip}
+\section{Education}
+\cventry{2017--2022}{B.S. in Chemistry with Mathematics Minor}{Virginia Tech}{Blacksburg, VA}{\textit{2.71 GPA}}{My first year at VT I struggled to adjust, and I ended my first semester with a 1.96. In my second and third years, I worked hard and my GPA shot up to a 2.67. When lockdowns started, I struggled to adjust to online learning, and my GPA stagnated, ending my fourth year with a 2.66. With the return to in-person instruction, I believe this will allow me to focus better on raising this, and I predict that at the end of the semester, I should have a 2.71.}
+\cventry{2012--2017}{High School Diploma}{Shippensburg Area Senior High School}{Shippensburg, PA}{}{During high school, I enrolled in several college courses in computer science, chemistry, physics, math, and electrical engineering.}
+
+\Needspace*{4\baselineskip}
+\section{Employment History}
+\cventry{2018--2021}{Salesperson}{Sheetz}{Shippensburg, PA}{}{Prepared food, handled transactions, and handled maintenance jobs around the store.}
+
+\Needspace*{4\baselineskip}
+\section{Languages}
+\cvlanguage{English}{Native speaker}{}
+\cvlanguage{French}{Conversational proficiency}{}
+\cvlanguage{German}{Conversational proficiency}{}
+\cvlanguage{Esperanto}{Conversational proficiency}{Self-taught}
+
+\Needspace*{4\baselineskip}
+\section{Technical Skills}
+\cvcomputer{Lanugages}{C/C++, Python, CUDA C/C++, GNU Make, Bash, Java, \LaTeX, \TeX, FORTRAN, x86 Assembler, Common Lisp}{Operating Systems}{GNU/Linux (Debian, Ubuntu, Linux Mint, CentOS), Windows}
+\cvcomputer{Software}{Psi4, Gaussian, QCFractal, Git, Microsoft Office Suite, Google Office Suite}{}{}
+
+\Needspace*{4\baselineskip}
+\section{Research Experience}
+\cventry{2017--2022}{Undergraduate Research}{Virginia Tech}{Blacksburg, VA}{}{Worked under Dr. T. Daniel Crawford in his theory lab at Virginia Tech.}
+
+\Needspace*{4\baselineskip}
+\section{Teaching Experience}
+\cventry{2015--2020}{Tutoring}{}{}{}{Tutored several students in chemistry and mathematics.}
+
+\Needspace*{4\baselineskip}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{cv}
+
+\end{document}
