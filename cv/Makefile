@@ -2,8 +2,8 @@
 all: cv.tex cv.bib
 	pdflatex cv.tex
 	bibtex cv.aux
-	@pdflatex cv.tex 1&>/dev/null
-	@pdflatex cv.tex 1&>/dev/null
+	pdflatex cv.tex
+	pdflatex cv.tex
 
 .PHONY:clean
 clean:
