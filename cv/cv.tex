@@ -17,6 +17,11 @@
 
 \usepackage{needspace}
 
+\usepackage{tcolorbox}
+
+
+\newcommand{\cvskill}[1]{\tcbox[colframe=color1, valign=center, before=, after=\hfill, height=1.1\baselineskip, boxsep=2pt, left=2pt, right=2pt]{#1}}
+
 % Personal info.
 \firstname{Connor}
 \lastname{Briggs}
@@ -33,11 +38,11 @@
 % Needs the \Needspace* so that section titles don't become orphans.
 \Needspace*{4\baselineskip}
 \section{Research Interests}
-Quantum Chemistry
+Applications of machine learning to quantum chemistry.
 
 \Needspace*{4\baselineskip}
 \section{Education}
-\cventry{2017--2022}{B.S. in Chemistry with Mathematics Minor}{Virginia Tech}{Blacksburg, VA}{\textit{2.71 GPA}}{My first year at VT I struggled to adjust, and I ended my first semester with a 1.96. In my second and third years, I worked hard and my GPA shot up to a 2.67. When lockdowns started, I struggled to adjust to online learning, and my GPA stagnated, ending my fourth year with a 2.66. With the return to in-person instruction, I believe this will allow me to focus better on raising this, and I predict that at the end of the semester, I should have a 2.71.}
+\cventry{2017--2022}{B.S. in Chemistry with Mathematics Minor}{Virginia Tech}{Blacksburg, VA}{\textit{2.75 GPA}}{My first year at VT I struggled to adjust, and I ended my first semester with a 1.96. In my second and third years, I worked hard and my GPA shot up to a 2.67. When lockdowns started, I struggled to adjust to online learning, and my GPA stagnated, ending my fourth year with a 2.66. With the return to in-person instruction, I finished out my time here with a 2.75, significantly higher than what I started with.}
 \cventry{2012--2017}{High School Diploma}{Shippensburg Area Senior High School}{Shippensburg, PA}{}{During high school, I enrolled in several college courses in computer science, chemistry, physics, math, and electrical engineering.}
 
 \Needspace*{4\baselineskip}
@@ -49,12 +54,12 @@ Quantum Chemistry
 \cvlanguage{English}{Native speaker}{}
 \cvlanguage{French}{Conversational proficiency}{}
 \cvlanguage{German}{Conversational proficiency}{}
-\cvlanguage{Esperanto}{Conversational proficiency}{Self-taught}
+\cvlanguage{Esperanto}{Conversational proficiency}{}
 
 \Needspace*{4\baselineskip}
-\section{Technical Skills}
-\cvcomputer{Lanugages}{C/C++, Python, CUDA C/C++, GNU Make, Bash, Java, \LaTeX, \TeX, FORTRAN, x86 Assembler, Common Lisp}{Operating Systems}{GNU/Linux (Debian, Ubuntu, Linux Mint, CentOS), Windows}
-\cvcomputer{Software}{Psi4, Gaussian, QCFractal, Git, Microsoft Office Suite, Google Office Suite}{}{}
+\section{Skills}
+\cvcomputer{Coding Lanugages}{C/C++, Python, CUDA C/C++, GNU Make, Bash, Java, \LaTeX, \TeX, FORTRAN, x86 Assembler, Common Lisp}{Operating Systems}{GNU/Linux (Debian, Ubuntu, Linux Mint, CentOS), Windows}
+\cvcomputer{Technical Skills}{Psi4, Gaussian, QCFractal, Git, Microsoft Office Suite, Google Office Suite, LibreOffice Suite, OpenMP, Super Computing, Quantum Computing}{Chemistry}{Quantum chemistry, Organic synthetic techniques, Inorganic Synthetic Techniques, Glovebox use, Schlenk line manipulations, NMR, IR, UV/Vis, Gas Chromatography, GC/MS, X-Ray Diffraction}
 
 \Needspace*{4\baselineskip}
 \section{Research Experience}
@@ -65,8 +70,12 @@ Quantum Chemistry
 \cventry{2015--2020}{Tutoring}{}{}{}{Tutored several students in chemistry and mathematics.}
 
 \Needspace*{4\baselineskip}
+\section{Current Projects}
+\cventry{2022}{Ring insertions of iridium(I) complexes into substituted thiophene rings}{}{}{}{For my capstone project, I performed several ring insertion reactions of tris(trimethylphosphine)(1,5-cyclooctadiene)iridium(I) chloride into several substituted thiophenes to investigate how different substituents would affect the insertion. I then worked with Dr. Joseph Merola of the Virginia Tech Department of Chemistry to finish the project, and I hope to have the results published by the end of Summer 2022.}
+
+\Needspace*{4\baselineskip}
 \nocite{*}
 \bibliographystyle{plain}
-\bibliography{cv}
+\bibliography{../pubs}
 
 \end{document}
